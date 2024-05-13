@@ -1,0 +1,355 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B7D5423F-347B-41FC-9A1B-6BCD198B8B78}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLiShopQuanAo</RootNamespace>
+    <AssemblyName>QuanLiShopQuanAo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Images\Aohoathinh.jpg" />
+    <Content Include="Assets\Images\aohoodi.png" />
+    <Content Include="Assets\Images\aokhoacnu.jpg" />
+    <Content Include="Assets\Images\Aophong.jpg" />
+    <Content Include="Assets\Images\aosomi.jpg" />
+    <Content Include="Assets\Images\aosweater.jpg" />
+    <Content Include="Assets\Images\Aothethao.jpg" />
+    <Content Include="Assets\Images\aothethaonam.png" />
+    <Content Include="Assets\Images\Aothun.jpg" />
+    <Content Include="Assets\Images\Banhang.png" />
+    <Content Include="Assets\Images\Chatlieu.png" />
+    <Content Include="Assets\Images\Dienthoai.jpg" />
+    <Content Include="Assets\Images\Facebook.jpg" />
+    <Content Include="Assets\Images\Feedback.png" />
+    <Content Include="Assets\Images\Gmail.jpg" />
+    <Content Include="Assets\Images\Khachhang.png" />
+    <Content Include="Assets\Images\lienhe.png" />
+    <Content Include="Assets\Images\nextpage.png" />
+    <Content Include="Assets\Images\Nguoidung.png" />
+    <Content Include="Assets\Images\Nhanvien.png" />
+    <Content Include="Assets\Images\out.png" />
+    <Content Include="Assets\Images\quanbaggynam.jpg" />
+    <Content Include="Assets\Images\Quanjean.jpg" />
+    <Content Include="Assets\Images\quanjeannu.jpg" />
+    <Content Include="Assets\Images\quanjeanongrong.jpg" />
+    <Content Include="Assets\Images\Quansot.png" />
+    <Content Include="Assets\Images\icons8-administrator-male-52 %281%29.png" />
+    <Content Include="Assets\Images\icons8-billing-machine-100.png" />
+    <Content Include="Assets\Images\icons8-cancel-52.png" />
+    <Content Include="Assets\Images\icons8-categories-60.png" />
+    <Content Include="Assets\Images\icons8-clothes-100.png" />
+    <Content Include="Assets\Images\icons8-clothes-52.png" />
+    <Content Include="Assets\Images\icons8-home-50.png" />
+    <Content Include="Assets\Images\icons8-line-64.png" />
+    <Content Include="Assets\Images\Location.png" />
+    <Content Include="Assets\Images\icons8-male-user-100.png" />
+    <Content Include="Assets\Images\icons8-save-64.png" />
+    <Content Include="Assets\Images\icons8-search-64.png" />
+    <Content Include="Assets\Images\icons8-trouser-100.png" />
+    <Content Include="Assets\Images\icons8-user-typing-using-typewriter-64.png" />
+    <Content Include="Assets\Images\Thiet-ke-shop-quan-ao-nu-nho-dep-vua-tiet-kiem-khong-gian-vua-tang-suc-canh-tranh.png" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.css" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.rtl.css" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.css" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.css" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap.css" />
+    <Content Include="Assets\Lib\css\bootstrap.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap.rtl.css" />
+    <Content Include="Assets\Lib\css\bootstrap.rtl.min.css" />
+    <Content Include="Assets\Lib\css\cssAdmin.css" />
+    <Content Include="Assets\Lib\js\bootstrap.bundle.js" />
+    <Content Include="Assets\Lib\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\Lib\js\bootstrap.esm.js" />
+    <Content Include="Assets\Lib\js\bootstrap.esm.min.js" />
+    <Content Include="Assets\Lib\js\bootstrap.js" />
+    <Content Include="Assets\Lib\js\bootstrap.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\Admin\BanHang.aspx" />
+    <Content Include="Views\Admin\Chatlieu.aspx" />
+    <Content Include="Views\Admin\ChiTietAdmin.aspx" />
+    <Content Include="Views\Admin\Clothes.aspx" />
+    <Content Include="Views\Admin\Khachhang.aspx" />
+    <Content Include="Views\Admin\Nguoidung.aspx" />
+    <Content Include="Views\Admin\Nhanvien.aspx" />
+    <Content Include="Views\Admin\TrangChu.aspx" />
+    <Content Include="Views\BanHang\ChiTietSanPham.aspx" />
+    <Content Include="Views\BanHang\Feedback.aspx" />
+    <Content Include="Views\BanHang\GioHang.aspx" />
+    <Content Include="Views\BanHang\Lienhe.aspx" />
+    <Content Include="Views\BanHang\QuanAo.aspx" />
+    <Content Include="Views\Dangki.aspx" />
+    <Content Include="Views\Login.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\DBClass.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\BanHang.aspx.cs">
+      <DependentUpon>BanHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\BanHang.aspx.designer.cs">
+      <DependentUpon>BanHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Chatlieu.aspx.cs">
+      <DependentUpon>Chatlieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Chatlieu.aspx.designer.cs">
+      <DependentUpon>Chatlieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ChiTietAdmin.aspx.cs">
+      <DependentUpon>ChiTietAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\ChiTietAdmin.aspx.designer.cs">
+      <DependentUpon>ChiTietAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Clothes.aspx.cs">
+      <DependentUpon>Clothes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Clothes.aspx.designer.cs">
+      <DependentUpon>Clothes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Khachhang.aspx.cs">
+      <DependentUpon>Khachhang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Khachhang.aspx.designer.cs">
+      <DependentUpon>Khachhang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Nguoidung.aspx.cs">
+      <DependentUpon>Nguoidung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Nguoidung.aspx.designer.cs">
+      <DependentUpon>Nguoidung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Nhanvien.aspx.cs">
+      <DependentUpon>Nhanvien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Nhanvien.aspx.designer.cs">
+      <DependentUpon>Nhanvien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\TrangChu.aspx.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\TrangChu.aspx.designer.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BanHang\ChiTietSanPham.aspx.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BanHang\ChiTietSanPham.aspx.designer.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BanHang\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BanHang\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BanHang\GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BanHang\GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BanHang\Lienhe.aspx.cs">
+      <DependentUpon>Lienhe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BanHang\Lienhe.aspx.designer.cs">
+      <DependentUpon>Lienhe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BanHang\QuanAo.aspx.cs">
+      <DependentUpon>QuanAo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BanHang\QuanAo.aspx.designer.cs">
+      <DependentUpon>QuanAo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dangki.aspx.cs">
+      <DependentUpon>Dangki.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Dangki.aspx.designer.cs">
+      <DependentUpon>Dangki.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BanHang\Nguoiban.Master.cs">
+      <DependentUpon>Nguoiban.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BanHang\Nguoiban.Master.designer.cs">
+      <DependentUpon>Nguoiban.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Lib\css\bootstrap-grid.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap.rtl.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Assets\Lib\js\bootstrap.bundle.js.map" />
+    <Content Include="Assets\Lib\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Assets\Lib\js\bootstrap.esm.js.map" />
+    <Content Include="Assets\Lib\js\bootstrap.esm.min.js.map" />
+    <Content Include="Assets\Lib\js\bootstrap.js.map" />
+    <Content Include="Assets\Lib\js\bootstrap.min.js.map" />
+    <None Include="Assets\Images\quan-jean-nam-10s21dpa006cr2-d-grey-_1__1_jpg" />
+    <None Include="packages.config" />
+    <Content Include="Views\Admin\Admin.Master" />
+    <Content Include="Views\BanHang\Nguoiban.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55376</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55376/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

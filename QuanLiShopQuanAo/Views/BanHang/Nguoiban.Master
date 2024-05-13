@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Nguoiban.Master.cs" Inherits="QuanLiShopQuanAo.Views.NguoiBan.NguoidungMaster" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        #left {
+            color: white;
+            height: 800px;
+            background-color: teal;
+        }
+        label {
+            color:white;
+        }
+       
+    </style>
+
+    <link href="../../Assets/Lib/css/bootstrap.rtl.min.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="left">
+                <div style="height:190px">
+                    <div class="mb-3">
+                        <a href="../Login.aspx">
+                            <img src="../../Assets/Images/icons8-male-user-100.png" height="20" width="20"/>
+                            <label style="cursor:pointer">Tài khoản</label>
+                        </a>
+                    </div>
+                    <div style="height:15px"></div>
+                    <div class="mb-3">
+                        <label style="cursor:pointer">
+                            <% if (Session["Username"] != null) { %>
+                                <%= Session["Username"].ToString() %>
+                            <% } else { %>
+                               Hãy đăng nhập để mua hàng!
+                            <% } %>
+                        </label>
+                    </div>
+                </div>
+                <div class=""></div>
+                <div class="p-2">
+                    <div class="mb-2">
+                        <a href="QuanAo.aspx">
+                            <img src="../../Assets/Images/icons8-home-50.png" height="20" width="20" />
+                            <label style="cursor:pointer">TRANG CHỦ</label>
+                        </a>
+                    </div>
+                    <div style="height:15px"></div>
+                    <div class="mb-3">
+                        <a href="Lienhe.aspx">
+                            <img src="../../Assets/Images/lienhe.png" height="20" width="20"/>
+                            <label style="cursor:pointer">LIÊN HỆ</label>
+                        </a>
+                    </div>
+                    <div style="height:15px"></div>
+                    <div class="mb-3">
+                        <a href="#">
+                            <img src="../../Assets/Images/icons8-billing-machine-100.png" height="20" width="20"/>
+                            <label style="cursor:pointer">THANH TOÁN</label>
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="Feedback.aspx">
+                            <img src="../../Assets/Images/Feedback.png" height="20" width="20"/>
+                            <label style="cursor:pointer">Feedback</label>
+                        </a>
+                    </div>
+                    <div style="height:150px"></div>
+                    <div class="mb-3">
+                        <a href="../Login.aspx">
+                            <img src="../../Assets/Images/out.png" height="20" width="20"/>
+                            <label style="cursor:pointer">ĐĂNG XUẤT</label>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <form id="form1" runat="server">
+                    <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
